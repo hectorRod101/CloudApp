@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="BYZ-38-t0r" customClass="ViewController" customModule="CloudSecureLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myCloud" translatesAutoresizingMaskIntoConstraints="NO" id="ldK-r3-tzB">
+                                <rect key="frame" x="40" y="0.0" width="365" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="365" id="Ppd-t3-GQr"/>
+                                    <constraint firstAttribute="height" constant="224" id="ZCC-0d-JY4"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Pg-25-QJR" customClass="RoundButton" customModule="CloudSecureLogin" customModuleProvider="target">
+                                <rect key="frame" x="206" y="232" width="199" height="50"/>
+                                <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8uN-2r-U12"/>
+                                    <constraint firstAttribute="width" constant="199" id="Veg-bF-F0Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Register"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="NoJ-ZF-Ubd" kind="show" id="xXt-38-DLH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kq5-iB-iNF" customClass="RoundButton" customModule="CloudSecureLogin" customModuleProvider="target">
+                                <rect key="frame" x="9" y="232" width="199" height="50"/>
+                                <color key="backgroundColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="199" id="YmQ-Rg-JEg"/>
+                                    <constraint firstAttribute="height" constant="50" id="dGq-rW-Pec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DARK-CLOUD" translatesAutoresizingMaskIntoConstraints="NO" id="ZIj-Bo-qvX">
+                                <rect key="frame" x="56" y="150" width="291" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="9gF-Ro-BzU"/>
+                                    <constraint firstAttribute="width" constant="291" id="aDK-O0-DF7"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Y4t-TU-I12">
+                                <rect key="frame" x="9" y="345" width="396" height="81"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kIy-fh-fiA">
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="40"/>
+                                        <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="lp1-Ua-hH4"/>
+                                            <constraint firstAttribute="width" constant="396" id="n4v-ad-Psb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHD-m5-ZyS">
+                                        <rect key="frame" x="0.0" y="41" width="396" height="40"/>
+                                        <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="GXS-iR-tmb"/>
+                                            <constraint firstAttribute="width" constant="396" id="ifU-8g-PLG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="396" id="czS-T1-CHK"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zl1-0f-30a" customClass="RoundButton" customModule="CloudSecureLogin" customModuleProvider="target">
+                                <rect key="frame" x="9" y="442" width="396" height="50"/>
+                                <color key="backgroundColor" red="0.92845288212435229" green="0.74852862501189077" blue="0.45101276092376685" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VEv-uY-1G7"/>
+                                    <constraint firstAttribute="width" constant="396" id="pDX-xi-gRs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Login"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NQe-J8-yVZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNW-EQ-eJz">
+                                <rect key="frame" x="9" y="299" width="52" height="30"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97568024900000005" green="0.96305359560000003" blue="0.91448500519999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zl1-0f-30a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0LS-nb-bEc"/>
+                            <constraint firstItem="zl1-0f-30a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="2Xe-Qq-r1v"/>
+                            <constraint firstItem="Kq5-iB-iNF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-98.5" id="3fB-MV-8eV"/>
+                            <constraint firstItem="ZIj-Bo-qvX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-234" id="4cj-RF-7eJ"/>
+                            <constraint firstItem="ZIj-Bo-qvX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-5.5" id="4mG-04-Khh"/>
+                            <constraint firstItem="zl1-0f-30a" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="46" id="4u3-tI-yHt"/>
+                            <constraint firstItem="zl1-0f-30a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="5Mu-kh-bbw"/>
+                            <constraint firstItem="Y4t-TU-I12" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DrH-k9-cqi"/>
+                            <constraint firstItem="eNW-EQ-eJz" firstAttribute="top" secondItem="Kq5-iB-iNF" secondAttribute="bottom" constant="17" id="J5v-YQ-2gC"/>
+                            <constraint firstItem="Y4t-TU-I12" firstAttribute="top" secondItem="eNW-EQ-eJz" secondAttribute="bottom" constant="16" id="PI6-D8-SYy"/>
+                            <constraint firstItem="ldK-r3-tzB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="15.5" id="Qrj-CB-Gvu"/>
+                            <constraint firstItem="4Pg-25-QJR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="98.5" id="SvN-wd-TlK"/>
+                            <constraint firstItem="eNW-EQ-eJz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="9" id="alW-hI-GFi"/>
+                            <constraint firstItem="Kq5-iB-iNF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-164" id="dbg-lR-OtL"/>
+                            <constraint firstItem="4Pg-25-QJR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-164" id="h8T-E7-SaI"/>
+                            <constraint firstItem="ldK-r3-tzB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-309" id="jWs-8b-bxE"/>
+                            <constraint firstItem="Y4t-TU-I12" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-35.5" id="xe4-OU-sKN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dhk-Di-TMv"/>
+                    <connections>
+                        <outlet property="EMail" destination="kIy-fh-fiA" id="si1-kp-Yzc"/>
+                        <outlet property="Password" destination="JHD-m5-ZyS" id="EMW-t7-BCu"/>
+                        <outlet property="validMessage" destination="eNW-EQ-eJz" id="1Lv-Aq-hHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275.36231884057975" y="111.16071428571428"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZwU-e0-y1D">
+            <objects>
+                <viewController modalPresentationStyle="currentContext" id="NoJ-ZF-Ubd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SG7-Eh-p8x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="G8h-Qz-9wH">
+                                <rect key="frame" x="9" y="302" width="396" height="350"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Wy-4A-hyF">
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="40"/>
+                                        <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="mvM-9u-xZT"/>
+                                            <constraint firstAttribute="width" constant="396" id="y0d-Yc-AmI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wa9-7h-Bsp">
+                                        <rect key="frame" x="0.0" y="62" width="396" height="40"/>
+                                        <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="396" id="TOl-AQ-TBy"/>
+                                            <constraint firstAttribute="height" constant="40" id="hLg-Z9-NX6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="family-name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1rY-68-ggP">
+                                        <rect key="frame" x="0.0" y="124" width="396" height="40"/>
+                                        <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="396" id="PhB-5U-oVP"/>
+                                            <constraint firstAttribute="height" constant="40" id="n6p-Mh-Q8E"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ofj-Fp-fYL">
+                                        <rect key="frame" x="0.0" y="186" width="396" height="40"/>
+                                        <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="396" id="GTd-FE-njy"/>
+                                            <constraint firstAttribute="height" constant="40" id="nvV-hZ-IAV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" textContentType="tel"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Oi-6b-qmq">
+                                        <rect key="frame" x="0.0" y="248" width="396" height="40"/>
+                                        <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="396" id="9mt-pp-srv"/>
+                                            <constraint firstAttribute="height" constant="40" id="Ool-7J-E1q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qmr-yJ-qH5">
+                                        <rect key="frame" x="0.0" y="310" width="396" height="40"/>
+                                        <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="396" id="ma7-yh-OpD"/>
+                                            <constraint firstAttribute="height" constant="40" id="nv9-bc-j77"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
+                                                <color key="value" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBb-Qn-TeL" customClass="RoundButton" customModule="CloudSecureLogin" customModuleProvider="target">
+                                <rect key="frame" x="9" y="232" width="199" height="50"/>
+                                <color key="backgroundColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="199" id="JU2-Fg-MQl"/>
+                                    <constraint firstAttribute="width" constant="199" id="P2y-2B-vaE"/>
+                                    <constraint firstAttribute="height" constant="50" id="hI4-Ge-Qr9"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="i8x-V1-VU4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleShadowColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="l9z-XD-Nno"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU0-Jb-hrA" customClass="RoundButton" customModule="CloudSecureLogin" customModuleProvider="target">
+                                <rect key="frame" x="206" y="232" width="199" height="50"/>
+                                <color key="backgroundColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="199" id="7WZ-I1-qRz"/>
+                                    <constraint firstAttribute="height" constant="50" id="Dgg-Vd-c1R"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="LXG-JM-qqp"/>
+                                    <constraint firstAttribute="width" constant="199" id="iNX-4w-9BV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Register"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9I-HZ-Q1o" customClass="RoundButton" customModule="CloudSecureLogin" customModuleProvider="target">
+                                <rect key="frame" x="9" y="700" width="396" height="50"/>
+                                <color key="backgroundColor" red="0.92845288209999999" green="0.74852862499999995" blue="0.45101276089999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="396" id="sRz-nj-p9y"/>
+                                    <constraint firstAttribute="height" constant="50" id="skc-VU-7tv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" red="0.098957721030000001" green="0.3025706312" blue="0.21255501460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Register"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w9j-7X-EIO"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Create-Account" translatesAutoresizingMaskIntoConstraints="NO" id="iNv-bm-Eur">
+                                <rect key="frame" x="20" y="117" width="374" height="93"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="13H-eW-CXi"/>
+                                    <constraint firstAttribute="height" constant="93" id="xk2-t0-azv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98393802109999995" green="0.97120450059999996" blue="0.92222484490000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="QBb-Qn-TeL" firstAttribute="centerX" secondItem="SG7-Eh-p8x" secondAttribute="centerX" constant="-98.5" id="2z8-V6-Qak"/>
+                            <constraint firstItem="d9I-HZ-Q1o" firstAttribute="centerY" secondItem="SG7-Eh-p8x" secondAttribute="centerY" constant="277" id="8nU-8D-Vni"/>
+                            <constraint firstItem="G8h-Qz-9wH" firstAttribute="centerY" secondItem="SG7-Eh-p8x" secondAttribute="centerY" constant="29" id="GQY-gz-1Du"/>
+                            <constraint firstItem="d9I-HZ-Q1o" firstAttribute="centerX" secondItem="SG7-Eh-p8x" secondAttribute="centerX" id="IzD-Oa-a27"/>
+                            <constraint firstItem="XU0-Jb-hrA" firstAttribute="centerY" secondItem="SG7-Eh-p8x" secondAttribute="centerY" constant="-191" id="JwZ-hm-Efi"/>
+                            <constraint firstItem="G8h-Qz-9wH" firstAttribute="centerX" secondItem="SG7-Eh-p8x" secondAttribute="centerX" id="T43-a0-80g"/>
+                            <constraint firstItem="iNv-bm-Eur" firstAttribute="centerY" secondItem="SG7-Eh-p8x" secondAttribute="centerY" constant="-284.5" id="UKc-ch-yBI"/>
+                            <constraint firstItem="QBb-Qn-TeL" firstAttribute="centerY" secondItem="SG7-Eh-p8x" secondAttribute="centerY" constant="-191" id="VUd-Fa-BW3"/>
+                            <constraint firstItem="XU0-Jb-hrA" firstAttribute="centerX" secondItem="SG7-Eh-p8x" secondAttribute="centerX" constant="98.5" id="fAk-4P-Rum"/>
+                            <constraint firstItem="iNv-bm-Eur" firstAttribute="centerX" secondItem="SG7-Eh-p8x" secondAttribute="centerX" id="vLX-JU-hxM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rzm-52-URt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sZ3-h1-Bc8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3F-uX-YUp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="111.16071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Create-Account" width="653" height="122"/>
+        <image name="DARK-CLOUD" width="616" height="116"/>
+        <image name="myCloud" width="800" height="800"/>
+    </resources>
+</document>
